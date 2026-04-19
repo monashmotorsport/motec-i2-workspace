@@ -1,4 +1,4 @@
-@off
+@echo off
 setlocal enabledelayedexpansion
 
 :: --- CONFIGURATION ---
@@ -17,6 +17,21 @@ echo   MoTeC Standard Standards Sync
 echo ===========================================
 echo Workspace Location: "%BASE_DIR%"
 echo.
+
+:: Check if MoTeC i2 Pro is running
+echo Checking MoTeC status...
+tasklist | find /i "i2.exe" >nul
+if %errorlevel% equ 0 (
+    echo.
+    echo ===========================================
+    echo  [!] ERROR: MoTeC i2 Pro is currently open!
+    echo ===========================================
+    echo Please save your work and close i2 completely.
+    echo Running this script while i2 is open will cause data loss.
+    echo.
+    pause
+    exit /b
+)
 
 :: 1. Download the ZIP
 echo [1/4] Downloading latest updates...
