@@ -7,7 +7,7 @@
   <MathExpression Id="Akku Power" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" Script="'Akku Pack Current' * 'Akku Pack Voltage' [V]" SampleRate="0" Unit="W"/>
   <MathExpression Id="Akku Energy" DisplayUnit="kW.h" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="integrate('Akku Power' [W])" SampleRate="0" Unit="J"/>
   <MathExpression Id="Junction Box Power" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="'Junction Box Current' [A] * 'Akku Pack Voltage' [V]" SampleRate="0" Unit="W"/>
-  <MathExpression Id="Junciton Box Energy" DisplayUnit="kW.h" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="integrate('Junction Box Power' [W])" SampleRate="0" Unit="J"/>
+  <MathExpression Id="Junction Box Energy" DisplayUnit="kW.h" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="integrate('Junction Box Power' [W])" SampleRate="0" Unit="J"/>
   <MathExpression Id="Motor Power FL" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="'Motor Speed FL' [rad/s] * 'Motor Torque FL' [Nm]" SampleRate="0" Unit="W"/>
   <MathExpression Id="Motor Power FR" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="4" Interpolate="1" Script="'Motor Speed FR' [rad/s] * 'Motor Torque FR' [Nm]" SampleRate="0" Unit="W"/>
   <MathExpression Id="Motor Power RL" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="6" Interpolate="1" Script="'Motor Speed RL' [rad/s] * 'Motor Torque RL' [Nm]" SampleRate="0" Unit="W"/>
