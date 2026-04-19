@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Maths Locale="English_United States.1252" DefaultLocale="C" Id="MMS - VD">
+ <MathConstants>
+  <MathConstant Name="Track Width" Value="1.323" Unit="m"/>
+  <MathConstant Name="Wheel Base" Value="1.535" Unit="m"/>
+ </MathConstants>
+ <MathItems>
+  <MathExpression Id="Oversteer" DisplayUnit="deg" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" EnumerationName="" Script="abs('Yaw Rate' [deg/s] / max('Corr Speed' [m/s], 1) * 'Wheel Base'[m]) - abs('Steered Angle' [deg])" SampleRate="0" Unit="deg"/>
+  <MathExpression Id="Susp Vel FL" DisplayUnit="mm/s" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="derivative('Susp Disp FL' [mm])" SampleRate="0" Unit="mm/s"/>
+  <MathExpression Id="Susp Vel FR" DisplayUnit="mm/s" DisplayDPS="2" DisplayColorIndex="4" Interpolate="1" Script="derivative('Susp Disp FR' [mm])" SampleRate="0" Unit="mm/s"/>
+  <MathExpression Id="Susp Vel RL" DisplayUnit="mm/s" DisplayDPS="2" DisplayColorIndex="6" Interpolate="1" Script="derivative('Susp Disp RL' [mm])" SampleRate="0" Unit="mm/s"/>
+  <MathExpression Id="Susp Vel RR" DisplayUnit="mm/s" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="derivative('Susp Disp RR' [mm])" SampleRate="0" Unit="mm/s"/>
+  <MathExpression Id="G Force Total" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="sqrt('G Force Lat' [G]^2 + 'G Force Long' [G]^2)" SampleRate="0" Unit="G"/>
+  <MathExpression Id="Cos Theta" DisplayUnit="ratio" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="'G Force Long' [G] / 'G Force Total' [G]" SampleRate="0" Unit="ratio"/>
+ </MathItems>
+</Maths>
