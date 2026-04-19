@@ -84,6 +84,11 @@ if exist "%ROOT_FOLDER%\Channels\Aliases.xml" (
 )
 
 :: 6. Update Maths Folder and Echo filenames
+if exist "%TARGET_MATHS%\MoTeC.xml" (
+    del /f /q "%TARGET_MATHS%\MoTeC.xml" >nul
+    echo      - Removed default MoTeC.xml
+)
+
 echo [5/5] Updating Math Channels...
 if exist "%ROOT_FOLDER%\Maths" (
     for %%f in ("%ROOT_FOLDER%\Maths\*.xml") do (
