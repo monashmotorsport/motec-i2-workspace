@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Maths Locale="English_United States.1252" DefaultLocale="C" Id="MMS - VD">
  <MathConstants>
-  <MathConstant Name="Track Width" Value="1.323" Unit="m"/>
+  <MathConstant Name="Track Width" Value="1.225" Unit="m"/>
   <MathConstant Name="Wheel Base" Value="1.535" Unit="m"/>
  </MathConstants>
  <MathItems>
@@ -12,5 +12,6 @@
   <MathExpression Id="Susp Vel RR" DisplayUnit="mm/s" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="derivative('Susp Disp RR' [mm])" SampleRate="0" Unit="mm/s"/>
   <MathExpression Id="G Force Total" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="sqrt('G Force Lat' [G]^2 + 'G Force Long' [G]^2)" SampleRate="0" Unit="G"/>
   <MathExpression Id="Cos Theta" DisplayUnit="ratio" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="'G Force Long' [G] / 'G Force Total' [G]" SampleRate="0" Unit="ratio"/>
+  <MathExpression Id="Roll" DisplayUnit="deg" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" EnumerationName="" Script="('Susp Disp FL' [mm] - 'Susp Disp FR' [mm] + 'Susp Disp RL' [mm] - 'Susp Disp RR' [mm]) / (2 * 'Track Width'[m])" SampleRate="0" Unit="rad"/>
  </MathItems>
 </Maths>
