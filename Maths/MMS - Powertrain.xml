@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Maths Locale="English_United States.1252" DefaultLocale="C" Id="MMS - Powertrain">
+ <MathConstants>
+  <MathConstant Name="PI" Value="3.14159265" Unit=""/>
+ </MathConstants>
+ <MathItems>
+  <MathExpression Id="Akku Power" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" Script="'Akku Pack Current' * 'Akku Pack Voltage' [V]" SampleRate="0" Unit="W"/>
+  <MathExpression Id="Akku Energy" DisplayUnit="kW.h" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="integrate('Akku Power' [W])" SampleRate="0" Unit="J"/>
+  <MathExpression Id="Junction Box Power" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="'Junction Box Current' [A] * 'Akku Pack Voltage' [V]" SampleRate="0" Unit="W"/>
+  <MathExpression Id="Junciton Box Energy" DisplayUnit="kW.h" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="integrate('Junction Box Power' [W])" SampleRate="0" Unit="J"/>
+  <MathExpression Id="Motor Power FL" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="'Motor Speed FL' [rad/s] * 'Motor Torque FL' [Nm]" SampleRate="0" Unit="W"/>
+  <MathExpression Id="Motor Power FR" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="4" Interpolate="1" Script="'Motor Speed FR' [rad/s] * 'Motor Torque FR' [Nm]" SampleRate="0" Unit="W"/>
+  <MathExpression Id="Motor Power RL" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="6" Interpolate="1" Script="'Motor Speed RL' [rad/s] * 'Motor Torque RL' [Nm]" SampleRate="0" Unit="W"/>
+  <MathExpression Id="Motor Power RR" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="'Motor Speed RR' [rad/s] * 'Motor Torque RR' [Nm]" SampleRate="0" Unit="W"/>
+  <MathExpression Id="Motor Power Total" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="'Motor Power FL' [kW] + 'Motor Power FR' [kW] + 'Motor Power RL' [kW] + 'Motor Power RR' [kW]" SampleRate="0" Unit="kW"/>
+ </MathItems>
+</Maths>
