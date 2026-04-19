@@ -23,4 +23,7 @@ If you just want to ensure you have the latest versions of our math channels and
 4. *Bonus:* The script is self-updating. If we push a bug fix for the script itself, it will automatically install the new version when you run it!
 
 > [!WARNING]
-> **Alias Overwrites:** This script forces your `Channels/Aliases.xml` file to perfectly match the team's master file. **If you have created local, custom aliases on your laptop, they will be deleted.** If you make a good alias, submit it to us to be added to the repo!
+> This script forces your `Channels/Aliases.xml` file to perfectly match the file in this repo. **If you have created local, custom aliases on your laptop, they will be deleted.** If you make a good alias, submit it to us to be added to the repo!
+
+> [!WARNING]
+> The script will ovewrite any math sources in your workspace that have the same name as files in the repo. All common math sources are named with the prefix `MMS - ` to avoid conflicts. If you have created custom math channels that share a name with files in the repo, they will be overwritten. If you make a good math channel, submit it to us to be added to the repo!
