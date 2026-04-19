@@ -50,7 +50,12 @@ for /d %%i in ("%TEMP_EXTRACT%\*") do set "ROOT_FOLDER=%%i"
 echo [3/5] Checking for script updates...
 if defined REPO_SCRIPT_NAME (
     if exist "%ROOT_FOLDER%\%REPO_SCRIPT_NAME%" (
-        fc /b "%~f0" "%ROOT_FOLDER%\%REPO_SCRIPT_NAME%" >nul
+        
+        :: Copy the current script to TEMP to avoid Parallels/VM drive bugs with FC
+        copy /y "%~f0" "%TEMP%\current_script_temp.bat" >nul
+        
+        :: Compare the TEMP copy against the Git download
+        fc /b "%TEMP%\current_script_temp.bat" "%ROOT_FOLDER%\%REPO_SCRIPT_NAME%" >nul
         if !errorlevel! neq 0 (
             echo      + New version of updater found! Installing...
             
@@ -58,6 +63,7 @@ if defined REPO_SCRIPT_NAME (
             echo F | xcopy /y /f "%ROOT_FOLDER%\%REPO_SCRIPT_NAME%" "%~f0" >nul
             
             :: Cleanup temp files before restarting
+            if exist "%TEMP%\current_script_temp.bat" del "%TEMP%\current_script_temp.bat" >nul
             del "%TEMP_ZIP%"
             rmdir /s /q "%TEMP_EXTRACT%"
             
@@ -66,6 +72,7 @@ if defined REPO_SCRIPT_NAME (
             exit
         ) else (
             echo      - Script is already up to date.
+            if exist "%TEMP%\current_script_temp.bat" del "%TEMP%\current_script_temp.bat" >nul
         )
     ) else (
         echo      [!] WARNING: %REPO_SCRIPT_NAME% not found in git repo. Skipping update.
