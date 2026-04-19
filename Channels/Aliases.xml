@@ -1,0 +1,610 @@
+<?xml version="1.0"?>
+<Aliases Locale="English_United States.1252" DefaultLocale="C">
+ <Alias Id="Akku BMSWatchdog">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Accumulator PackData bmsWatchdog"/>
+   <ChannelRef Id="Inputs Accumulator PackData BmsWatchdog"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Akku Cell Temp Avg">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Accumulator PackData averageTemperature"/>
+   <ChannelRef Id="Inputs Accumulator PackData AverageTemp"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Akku Cell Temp Max">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Accumulator PackData maxTemperature"/>
+   <ChannelRef Id="Inputs Accumulator PackData MaxTemp"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Akku Cell Temp Min">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Accumulator PackData minTemperature"/>
+   <ChannelRef Id="Inputs Accumulator PackData MinTemp"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Akku Cell Voltage Avg">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Accumulator PackData averageVoltage"/>
+   <ChannelRef Id="Inputs Accumulator PackData AverageVoltage"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Akku Cell Voltage Max">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Accumulator PackData maxVoltage"/>
+   <ChannelRef Id="Inputs Accumulator PackData MaxVoltage"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Akku Cell Voltage Min">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Accumulator PackData minVoltage"/>
+   <ChannelRef Id="Inputs Accumulator PackData MinVoltage"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Akku Charge Power Limit">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Accumulator PackData maxChargingPower"/>
+   <ChannelRef Id="Inputs Accumulator PackData MaxChargingPwr"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Akku Discharge Power Limit">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Accumulator PackData maxDischargingPower"/>
+   <ChannelRef Id="Inputs Accumulator PackData MaxDischargingPwr"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Akku IMD Duty Cycle">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Accumulator IMD dataDutyCycle"/>
+   <ChannelRef Id="Inputs Accumulator IMD DataDutyCycle"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Akku IMD Frequency">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Accumulator IMD dataFrequency"/>
+   <ChannelRef Id="Inputs Accumulator IMD DataFrequency"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Akku Monitored Cells">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Accumulator PackData monitoredCells"/>
+   <ChannelRef Id="Inputs Accumulator PackData MonitoredCells"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Akku Open Cells">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Accumulator PackData openCells"/>
+   <ChannelRef Id="Inputs Accumulator PackData OpenCells"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Akku PEC Error Count">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Accumulator PackData pecErrorCount"/>
+   <ChannelRef Id="Inputs Accumulator PackData PecErrorCount"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Akku Pack Current">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Accumulator PackData current"/>
+   <ChannelRef Id="Inputs Accumulator PackData Current"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Akku Pack Voltage">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Accumulator PackData voltage"/>
+   <ChannelRef Id="Inputs Accumulator PackData Voltage"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Base Speed">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors Chassis speed"/>
+   <ChannelRef Id="States SpeedEstimation baseSpeed"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Brake Pos">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors Brakes BPPS"/>
+   <ChannelRef Id="Inputs Brakes position"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Brake Pres Front">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors Brakes PressureFront"/>
+   <ChannelRef Id="Inputs Brakes pressureFront"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Brake Pres Rear">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors Brakes PressureRear"/>
+   <ChannelRef Id="Inputs Brakes pressureRear"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Chassis Speed FL">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors Chassis FL chassisSpeed"/>
+   <ChannelRef Id="States SpeedEstimation FL chassisSpeed"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Chassis Speed FR">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors Chassis FR chassisSpeed"/>
+   <ChannelRef Id="States SpeedEstimation FR chassisSpeed"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Chassis Speed RL">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors Chassis RL chassisSpeed"/>
+   <ChannelRef Id="States SpeedEstimation RL chassisSpeed"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Chassis Speed RR">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors Chassis RR chassisSpeed"/>
+   <ChannelRef Id="States SpeedEstimation RR chassisSpeed"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Current D Axis FL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Left curD"/>
+   <ChannelRef Id="Tractive System Inverter Front Left curD"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Current D Axis FR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Right curD"/>
+   <ChannelRef Id="Tractive System Inverter Front Right curD"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Current D Axis RL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Left curD"/>
+   <ChannelRef Id="Tractive System Inverter Rear Left curD"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Current D Axis RR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Right curD"/>
+   <ChannelRef Id="Tractive System Inverter Rear Right curD"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Current Q Axis FL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Left curQ"/>
+   <ChannelRef Id="Tractive System Inverter Front Left curQ"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Current Q Axis FR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Right curQ"/>
+   <ChannelRef Id="Tractive System Inverter Front Right curQ"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Current Q Axis RL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Left curQ"/>
+   <ChannelRef Id="Tractive System Inverter Rear Left curQ"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Current Q Axis RR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Right curQ"/>
+   <ChannelRef Id="Tractive System Inverter Rear Right curQ"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Current Ref D Axis FL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Left curDRef"/>
+   <ChannelRef Id="Tractive System Inverter Front Left curDref"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Current Ref D Axis FR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Right curDRef"/>
+   <ChannelRef Id="Tractive System Inverter Front Right curDref"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Current Ref D Axis RL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Left curDRef"/>
+   <ChannelRef Id="Tractive System Inverter Rear Left curDref"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Current Ref D Axis RR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Right curDRef"/>
+   <ChannelRef Id="Tractive System Inverter Rear Right curDref"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Current Ref Q Axis FL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Left curQRef"/>
+   <ChannelRef Id="Tractive System Inverter Front Left curQref"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Current Ref Q Axis FR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Right curQRef"/>
+   <ChannelRef Id="Tractive System Inverter Front Right curQref"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Current Ref Q Axis RL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Left curQRef"/>
+   <ChannelRef Id="Tractive System Inverter Rear Left curQref"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Current Ref Q Axis RR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Right curQRef"/>
+   <ChannelRef Id="Tractive System Inverter Rear Right curQref"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Derate Torque Req FL">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Derating FL torqueDrate"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Derate Torque Req FR">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Derating FR torqueDrate"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Derate Torque Req RL">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Derating RL torqueDrate"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Derate Torque Req RR">
+  <ChannelRefs>
+   <ChannelRef Id="Tractive System Derating RR torqueDrate"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="G Force Lat">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors IMU latG"/>
+   <ChannelRef Id="Inputs IMU latG"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="G Force Long">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors IMU longG"/>
+   <ChannelRef Id="Inputs IMU longG"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="G Force Vert">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors IMU vertG"/>
+   <ChannelRef Id="Inputs IMU vertG"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Ground Speed">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors Chassis kalmanSpeed"/>
+   <ChannelRef Id="States SpeedEstimation vehicleSpeed"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Ground Speed FL">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors Chassis FL groundSpeed"/>
+   <ChannelRef Id="States SpeedEstimation FL cornerSpeed"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Ground Speed FR">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors Chassis FR groundSpeed"/>
+   <ChannelRef Id="States SpeedEstimation FR cornerSpeed"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Ground Speed RL">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors Chassis RL groundSpeed"/>
+   <ChannelRef Id="States SpeedEstimation RL cornerSpeed"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Ground Speed RR">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors Chassis RR groundSpeed"/>
+   <ChannelRef Id="States SpeedEstimation RR cornerSpeed"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Inverter Temp FL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Left powermoduleTemp"/>
+   <ChannelRef Id="Tractive System Inverter Front Left powerModuleTemp"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Inverter Temp FR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Right powermoduleTemp"/>
+   <ChannelRef Id="Tractive System Inverter Front Right powerModuleTemp"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Inverter Temp RL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Left powermoduleTemp"/>
+   <ChannelRef Id="Tractive System Inverter Rear Left powerModuleTemp"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Inverter Temp RR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Right powermoduleTemp"/>
+   <ChannelRef Id="Tractive System Inverter Rear Right powerModuleTemp"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Junction Box Current">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors JunctionBox Current"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Current FL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Left motorCurrent"/>
+   <ChannelRef Id="Tractive System Inverter Front Left currentReal"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Current FR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Right motorCurrent"/>
+   <ChannelRef Id="Tractive System Inverter Front Right currentReal"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Current RL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Left motorCurrent"/>
+   <ChannelRef Id="Tractive System Inverter Rear Left currentReal"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Current RR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Right motorCurrent"/>
+   <ChannelRef Id="Tractive System Inverter Rear Right currentReal"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Power FL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Left motorPower"/>
+   <ChannelRef Id="Tractive System Inverter Front Left powerMotorReal"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Power FR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Right motorPower"/>
+   <ChannelRef Id="Tractive System Inverter Front Right powerMotorReal"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Power RL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Left motorPower"/>
+   <ChannelRef Id="Tractive System Inverter Rear Left powerMotorReal"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Power RR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Right motorPower"/>
+   <ChannelRef Id="Tractive System Inverter Rear Right powerMotorReal"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Speed FL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Left velocity"/>
+   <ChannelRef Id="Tractive System Inverter Front Left velocityReal"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Speed FR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Right velocity"/>
+   <ChannelRef Id="Tractive System Inverter Front Right velocityReal"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Speed RL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Left velocity"/>
+   <ChannelRef Id="Tractive System Inverter Rear Left velocityReal"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Speed RR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Right velocity"/>
+   <ChannelRef Id="Tractive System Inverter Rear Right velocityReal"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Temp FL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Left motorTemp"/>
+   <ChannelRef Id="Tractive System Inverter Front Left motorTemp"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Temp FR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Right motorTemp"/>
+   <ChannelRef Id="Tractive System Inverter Front Right motorTemp"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Temp RL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Left motorTemp"/>
+   <ChannelRef Id="Tractive System Inverter Rear Left motorTemp"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Temp RR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Right motorTemp"/>
+   <ChannelRef Id="Tractive System Inverter Rear Right motorTemp"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Torque FL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Left torque"/>
+   <ChannelRef Id="Tractive System Inverter Front Left torqueReal"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Torque FR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Right torque"/>
+   <ChannelRef Id="Tractive System Inverter Front Right torqueReal"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Torque RL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Left torque"/>
+   <ChannelRef Id="Tractive System Inverter Rear Left torqueReal"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Motor Torque RR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Right torque"/>
+   <ChannelRef Id="Tractive System Inverter Rear Right torqueReal"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Pitch Rate">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors IMU pitchRate"/>
+   <ChannelRef Id="Inputs IMU pitchRate"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Roll Rate">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors IMU rollRate"/>
+   <ChannelRef Id="Inputs IMU rollRate"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Steered Angle">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors Chassis Steering angle"/>
+   <ChannelRef Id="Inputs Steering angle"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Susp Disp FL">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors Suspension Shock Pot FL"/>
+   <ChannelRef Id="Sensors Suspension Shock Pot Front Left"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Susp Disp FR">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors Suspension Shock Pot FR"/>
+   <ChannelRef Id="Sensors Suspension Shock Pot Front Right"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Susp Disp RL">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors Suspension Shock Pot RL"/>
+   <ChannelRef Id="Sensors Suspension Shock Pot Rear Left"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Susp Disp RR">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors Suspension Shock Pot RR"/>
+   <ChannelRef Id="Sensors Suspension Shock Pot Rear Right"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Target Speed FL">
+  <ChannelRefs>
+   <ChannelRef Id="Controller FL targetVelocity"/>
+   <ChannelRef Id="Controls FL targetVelocity"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Target Speed FR">
+  <ChannelRefs>
+   <ChannelRef Id="Controller FR targetVelocity"/>
+   <ChannelRef Id="Controls FR targetVelocity"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Target Speed RL">
+  <ChannelRefs>
+   <ChannelRef Id="Controller RL targetVelocity"/>
+   <ChannelRef Id="Controls RL targetVelocity"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Target Speed RR">
+  <ChannelRefs>
+   <ChannelRef Id="Controller RR targetVelocity"/>
+   <ChannelRef Id="Controls RR targetVelocity"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Throttle Pos">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors APPS throttlePosition"/>
+   <ChannelRef Id="Inputs APPS throttlePosition"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Torque Req FL">
+  <ChannelRefs>
+   <ChannelRef Id="Controller FL torqueRequest"/>
+   <ChannelRef Id="Controls FL torqueRequest"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Torque Req FR">
+  <ChannelRefs>
+   <ChannelRef Id="Controller FR torqueRequest"/>
+   <ChannelRef Id="Controls FR torqueRequest"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Torque Req RL">
+  <ChannelRefs>
+   <ChannelRef Id="Controller RL torqueRequest"/>
+   <ChannelRef Id="Controls RL torqueRequest"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Torque Req RR">
+  <ChannelRefs>
+   <ChannelRef Id="Controller RR torqueRequest"/>
+   <ChannelRef Id="Controls RR torqueRequest"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Voltage D Axis FL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Left volD"/>
+   <ChannelRef Id="Tractive System Inverter Front Left volD"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Voltage D Axis FR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Right volD"/>
+   <ChannelRef Id="Tractive System Inverter Front Right volD"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Voltage D Axis RL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Left volD"/>
+   <ChannelRef Id="Tractive System Inverter Rear Left volD"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Voltage D Axis RR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Right volD"/>
+   <ChannelRef Id="Tractive System Inverter Rear Right volD"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Voltage Q Axis FL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Left volQ"/>
+   <ChannelRef Id="Tractive System Inverter Front Left volQ"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Voltage Q Axis FR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Front Right volQ"/>
+   <ChannelRef Id="Tractive System Inverter Front Right volQ"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Voltage Q Axis RL">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Left volQ"/>
+   <ChannelRef Id="Tractive System Inverter Rear Left volQ"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Voltage Q Axis RR">
+  <ChannelRefs>
+   <ChannelRef Id="Inputs Inverter Rear Right volQ"/>
+   <ChannelRef Id="Tractive System Inverter Rear Right volQ"/>
+  </ChannelRefs>
+ </Alias>
+ <Alias Id="Yaw Rate">
+  <ChannelRefs>
+   <ChannelRef Id="Sensors IMU yawRate"/>
+   <ChannelRef Id="Inputs IMU yawRate"/>
+  </ChannelRefs>
+ </Alias>
+</Aliases>
