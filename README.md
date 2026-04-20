@@ -19,7 +19,7 @@ If you just want to ensure you have the latest versions of our math channels and
 
 1. **Close MoTeC i2 Pro.** (The script will intentionally block you if MoTeC is open to prevent file corruption).
 2. Double-click `update.bat`.
-3. The script will automatically connect to GitHub, download the latest files, safely merge the new math channels, and clean up after itself. 
+3. The script will automatically connect to GitHub, download the latest files, safely merge the new math channels, and clean up after itself.
 4. *Bonus:* The script is self-updating. If we push a bug fix for the script itself, it will automatically install the new version when you run it!
 
 > [!WARNING]
