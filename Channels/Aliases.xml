@@ -3,97 +3,97 @@
  <Alias Id="Akku BMSWatchdog">
   <ChannelRefs>
    <ChannelRef Id="Tractive System Accumulator PackData bmsWatchdog"/>
-   <ChannelRef Id="Inputs Accumulator PackData BmsWatchdog"/>
+   <ChannelRef Id="Inputs Accumulator PackData bmsWatchdog"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Akku Cell Temp Avg">
   <ChannelRefs>
-   <ChannelRef Id="Tractive System Accumulator PackData averageTemperature"/>
-   <ChannelRef Id="Inputs Accumulator PackData AverageTemp"/>
+   <ChannelRef Id="Tractive System Accumulator PackData avgTemperature"/>
+   <ChannelRef Id="Inputs Accumulator PackData avgTemp"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Akku Cell Temp Max">
   <ChannelRefs>
    <ChannelRef Id="Tractive System Accumulator PackData maxTemperature"/>
-   <ChannelRef Id="Inputs Accumulator PackData MaxTemp"/>
+   <ChannelRef Id="Inputs Accumulator PackData maxTemp"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Akku Cell Temp Min">
   <ChannelRefs>
    <ChannelRef Id="Tractive System Accumulator PackData minTemperature"/>
-   <ChannelRef Id="Inputs Accumulator PackData MinTemp"/>
+   <ChannelRef Id="Inputs Accumulator PackData minTemp"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Akku Cell Voltage Avg">
   <ChannelRefs>
-   <ChannelRef Id="Tractive System Accumulator PackData averageVoltage"/>
-   <ChannelRef Id="Inputs Accumulator PackData AverageVoltage"/>
+   <ChannelRef Id="Tractive System Accumulator PackData avgVoltage"/>
+   <ChannelRef Id="Inputs Accumulator PackData avgVoltage"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Akku Cell Voltage Max">
   <ChannelRefs>
    <ChannelRef Id="Tractive System Accumulator PackData maxVoltage"/>
-   <ChannelRef Id="Inputs Accumulator PackData MaxVoltage"/>
+   <ChannelRef Id="Inputs Accumulator PackData maxVoltage"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Akku Cell Voltage Min">
   <ChannelRefs>
    <ChannelRef Id="Tractive System Accumulator PackData minVoltage"/>
-   <ChannelRef Id="Inputs Accumulator PackData MinVoltage"/>
+   <ChannelRef Id="Inputs Accumulator PackData minVoltage"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Akku Charge Power Limit">
   <ChannelRefs>
    <ChannelRef Id="Tractive System Accumulator PackData maxChargingPower"/>
-   <ChannelRef Id="Inputs Accumulator PackData MaxChargingPwr"/>
+   <ChannelRef Id="Inputs Accumulator PackData maxChargingPwr"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Akku Discharge Power Limit">
   <ChannelRefs>
    <ChannelRef Id="Tractive System Accumulator PackData maxDischargingPower"/>
-   <ChannelRef Id="Inputs Accumulator PackData MaxDischargingPwr"/>
+   <ChannelRef Id="Inputs Accumulator PackData maxDischargingPwr"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Akku IMD Duty Cycle">
   <ChannelRefs>
    <ChannelRef Id="Tractive System Accumulator IMD dataDutyCycle"/>
-   <ChannelRef Id="Inputs Accumulator IMD DataDutyCycle"/>
+   <ChannelRef Id="Inputs Accumulator IMD dutyCycle"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Akku IMD Frequency">
   <ChannelRefs>
    <ChannelRef Id="Tractive System Accumulator IMD dataFrequency"/>
-   <ChannelRef Id="Inputs Accumulator IMD DataFrequency"/>
+   <ChannelRef Id="Inputs Accumulator IMD frequency"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Akku Monitored Cells">
   <ChannelRefs>
    <ChannelRef Id="Tractive System Accumulator PackData monitoredCells"/>
-   <ChannelRef Id="Inputs Accumulator PackData MonitoredCells"/>
+   <ChannelRef Id="Inputs Accumulator PackData monitoredCells"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Akku Open Cells">
   <ChannelRefs>
    <ChannelRef Id="Tractive System Accumulator PackData openCells"/>
-   <ChannelRef Id="Inputs Accumulator PackData OpenCells"/>
+   <ChannelRef Id="Inputs Accumulator PackData openCells"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Akku PEC Error Count">
   <ChannelRefs>
    <ChannelRef Id="Tractive System Accumulator PackData pecErrorCount"/>
-   <ChannelRef Id="Inputs Accumulator PackData PecErrorCount"/>
+   <ChannelRef Id="Inputs Accumulator PackData pecErrorCount"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Akku Pack Current">
   <ChannelRefs>
    <ChannelRef Id="Tractive System Accumulator PackData current"/>
-   <ChannelRef Id="Inputs Accumulator PackData Current"/>
+   <ChannelRef Id="Inputs Accumulator PackData current"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Akku Pack Voltage">
   <ChannelRefs>
    <ChannelRef Id="Tractive System Accumulator PackData voltage"/>
-   <ChannelRef Id="Inputs Accumulator PackData Voltage"/>
+   <ChannelRef Id="Inputs Accumulator PackData voltage"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Base Speed">
