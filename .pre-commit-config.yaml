@@ -1,0 +1,26 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: check-xml
+
+  - repo: local
+    hooks:
+      - id: fix-xml-headers
+        name: Fix XML headers
+        entry: python -m scripts.fix_xml_headers
+        language: python
+        files: "\\.xml$"
+        stages: [pre-commit]
+        require_serial: true
+        additional_dependencies: [lxml]
+
+      - id: enforce-colors
+        name: Enforce XML math channel colors
+        entry: python -m scripts.enforce_colors
+        language: python
+        files: "\\.xml$"
+        stages: [pre-commit]
+        require_serial: true
+        additional_dependencies: [lxml]
