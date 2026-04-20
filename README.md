@@ -30,6 +30,14 @@ If you just want to ensure you have the latest versions of our math channels and
 
 ## Common Issues
 
+### Windows protected your PC
+
+Windows automatically flags .bat files downloaded from the internet as a security precaution. Click "More info" text in the blue box, then click the "Run anyway" button. You will only have to do this once. The script is fully open source, so feel free to inspect the code yourself to verify it's safe.
+
+### Access Denied
+
+Your Workspace folder is likely located in a protected Windows directory (like `C:\Program Files`). If your workspace is in a protected folder, you must right-click update.bat and select "Run as Administrator".
+
 ### Network Errors
 
 ```
