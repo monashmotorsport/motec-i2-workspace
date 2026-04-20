@@ -27,3 +27,20 @@ If you just want to ensure you have the latest versions of our math channels and
 
 > [!WARNING]
 > The script will ovewrite any math sources in your workspace that have the same name as files in the repo. All common math sources are named with the prefix `MMS - ` to avoid conflicts. If you have created custom math channels that share a name with files in the repo, they will be overwritten. If you make a good math channel, submit it to us to be added to the repo!
+
+## Common Issues
+
+### Network Errors
+
+```
+Invoke-WebRequest : The remote name could not be resolved: 'github.com'
+```
+
+This script works by connecting to GitHub to download the latest files. You need to have an active internet connection for it to work. If you are getting this error, check your network connection and try again.
+
+> [!NOTE]
+> If you're running this through Parallels Desktop on a Mac, and you are connected to the internet but still get this error, try resetting your network connection in Parallels.
+> - Look at your Mac's top menu bar.
+> - Click the Parallels Desktop icon (the two red parallel lines).
+> - Go to Devices > Network > click Disconnect.
+> - Wait 5 seconds, go to the exact same menu, and select Default Adapter (or whatever your shared network option is called) to reconnect it.
