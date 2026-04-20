@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+  <xs:element name="Maths">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="MathConstants" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MathConstant" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Name" type="xs:string" use="required"/>
+                  <xs:attribute name="Value" type="xs:double" use="required"/>
+                  <xs:attribute name="Unit" type="xs:string" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="MathItems" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MathExpression" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Id" type="xs:string" use="required"/>
+                  <xs:attribute name="DisplayUnit" type="xs:string" use="optional"/>
+                  <xs:attribute name="DisplayDPS" type="xs:integer" use="optional"/>
+                  <xs:attribute name="DisplayColorIndex" type="xs:integer" use="optional"/>
+                  <xs:attribute name="Interpolate" type="xs:boolean" use="optional"/>
+                  <xs:attribute name="EnumerationName" type="xs:string" use="optional"/>
+                  <xs:attribute name="Script" type="xs:string" use="optional"/>
+                  <xs:attribute name="SampleRate" type="xs:integer" use="optional"/>
+                  <xs:attribute name="Unit" type="xs:string" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Locale" type="xs:string" use="optional"/>
+      <xs:attribute name="DefaultLocale" type="xs:string" use="optional"/>
+      <xs:attribute name="Id" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
