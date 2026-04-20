@@ -11,7 +11,7 @@ To get started, you only need to download the updater script and place it in the
 1. Download the `update.bat` file directly from this repository.
 2. Open File Explorer and navigate to your MoTeC workspace folder. This is typically located at:
    `Documents\MoTeC\i2\Workspaces\[Your Workspace Name]`
-3. Move the `update.bat` file into this workspace folder. It **must** sit in the exact same directory as your `Channels` and `Maths` folders.
+3. Move the `update.bat` file into this workspace folder. It **must** sit in the exact same folder as the `Workspace.i2wsp` file.
 
 ## How to Update Your Files
 
