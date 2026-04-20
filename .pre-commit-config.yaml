@@ -1,0 +1,18 @@
+repos:
+  - repo: local
+    hooks:
+      - id: fix-xml-headers
+        name: Fix XML headers
+        entry: python -m scripts.fix_xml_headers
+        language: python
+        files: "\\.xml$"
+        stages: [pre-commit]
+        require_serial: true
+
+      - id: enforce-colors
+        name: Enforce XML math channel colors
+        entry: python -m scripts.enforce_colors
+        language: python
+        files: "\\.xml$"
+        stages: [pre-commit]
+        require_serial: true
