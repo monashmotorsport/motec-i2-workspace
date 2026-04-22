@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Maths Locale="English_Australia.1252" DefaultLocale="C" Id="M25 Constants">
+ <MathConstants>
+  <MathConstant Name="Aero Bal " Value="55" Unit="%"/>
+  <MathConstant Name="CDA" Value="1.82" Unit="m2"/>
+  <MathConstant Name="CLA " Value="5.5" Unit="m2"/>
+  <MathConstant Name="COG" Value="0.32" Unit="m"/>
+  <MathConstant Name="Front Mass Balance" Value="0.475" Unit=""/>
+  <MathConstant Name="LLTD" Value="43.45" Unit=""/>
+  <MathConstant Name="Mass" Value="275" Unit="kg"/>
+  <MathConstant Name="PI" Value="3.14159265" Unit=""/>
+  <MathConstant Name="Track Width" Value="1.220" Unit="m"/>
+  <MathConstant Name="Unloaded Wheel Radius" Value="0.254" Unit="m"/>
+  <MathConstant Name="Wheel Base" Value="1.535" Unit="m"/>
+ </MathConstants>
+</Maths>
