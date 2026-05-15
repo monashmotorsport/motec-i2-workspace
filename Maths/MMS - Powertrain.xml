@@ -1,8 +1,11 @@
 <?xml version="1.0"?>
 <Maths Locale="English_Australia.1252" DefaultLocale="C" Id="MMS - Powertrain">
+ <MathConstants>
+  <MathConstant Name="Total Endurance Dist" Value="22" Unit="km"/>
+ </MathConstants>
  <MathItems>
   <MathExpression Id="Akku Power" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" Script="'Akku Pack Current' * 'Akku Pack Voltage' [V]" SampleRate="0" Unit="W"/>
-  <MathExpression Id="Akku Energy" DisplayUnit="kW.h" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="integrate('Akku Power' [W])" SampleRate="0" Unit="J"/>
+  <MathExpression Id="Akku Energy Used" DisplayUnit="kW.h" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="integrate('Akku Power' [W])" SampleRate="0" Unit="J"/>
   <MathExpression Id="Junction Box Power" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="'Junction Box Current' [A] * 'Akku Pack Voltage' [V]" SampleRate="0" Unit="W"/>
   <MathExpression Id="Junction Box Energy" DisplayUnit="kW.h" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="integrate('Junction Box Power' [W])" SampleRate="0" Unit="J"/>
   <MathExpression Id="Motor Power FL" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="'Motor Speed FL' [rad/s] * 'Motor Torque FL' [Nm]" SampleRate="0" Unit="W"/>
@@ -10,5 +13,23 @@
   <MathExpression Id="Motor Power RL" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="6" Interpolate="1" Script="'Motor Speed RL' [rad/s] * 'Motor Torque RL' [Nm]" SampleRate="0" Unit="W"/>
   <MathExpression Id="Motor Power RR" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="'Motor Speed RR' [rad/s] * 'Motor Torque RR' [Nm]" SampleRate="0" Unit="W"/>
   <MathExpression Id="Motor Power Total" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="'Motor Power FL' [kW] + 'Motor Power FR' [kW] + 'Motor Power RL' [kW] + 'Motor Power RR' [kW]" SampleRate="0" Unit="kW"/>
+  <MathExpression Id="Energy Discharged" DisplayUnit="kW.h" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="integrate('Akku Power' [kW], 'Akku Power' [kW] &gt; 0)" SampleRate="0" Unit="J"/>
+  <MathExpression Id="Energy Remaining" DisplayUnit="kW.h" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="'Pack Energy' [j] - 'Akku Energy Used' [j]" SampleRate="0" Unit="J"/>
+  <MathExpression Id="Distance Remaining (Endurance)" DisplayUnit="m" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="'Total Endurance Dist' [m] - 'Corr Dist' [m]" SampleRate="0" Unit="m"/>
+  <MathExpression Id="SoC Energy Remaining" DisplayUnit="W.h" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="'Akku State Of Charge' [ratio] * 'Pack Energy' [J] / 1000" SampleRate="0" Unit="J"/>
+  <MathExpression Id="SoC Distance Remaining " DisplayUnit="km" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="'Akku State Of Charge' [ratio] / 100 * 'Total Endurance Dist' [m]" SampleRate="0" Unit="m"/>
+  <MathExpression Id="Akku Power - JB Current" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="'Junction Box Current' [A] * 'Akku Pack Voltage' [V]" SampleRate="0" Unit="W"/>
+  <MathExpression Id="Akku Power - Pack Current" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="'Akku Pack Current' [A] * 'Akku Pack Voltage' [V]" SampleRate="0" Unit="W"/>
+  <MathExpression Id="Energy Allowance" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="'Energy Remaining' [kW.h] / 'Distance Remaining (Endurance)' [km]" SampleRate="0" Unit=""/>
+  <MathExpression Id="Energy Derate " DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="'Energy Factor' [W] * 'Energy Allowance'" SampleRate="0" Unit="W"/>
+  <MathExpression Id="Max Charge Power " DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="6" Interpolate="1" Script="- min('Akku Charge Power Limit' [W], 'Akku Derating Charge Power Limit' [W])" SampleRate="0" Unit="W"/>
+  <MathExpression Id="Energy Used" DisplayUnit="kW.h" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="integrate('Akku Power' [kW])" SampleRate="0" Unit="kJ"/>
+  <MathExpression Id="Energy Used / km" DisplayDPS="2" DisplayColorIndex="6" Interpolate="1" Script="( stat_end('Energy Used' [kW.h], 'True', 'Laps') - stat_start('Energy Used' [kW.h], 'True', 'Laps') ) / ( stat_end('Corr Dist' [km], 'True', 'Laps') - stat_start('Corr Dist' [km], 'True', 'Laps') )" SampleRate="0" Unit=""/>
+  <MathExpression Id="Temp Used / km" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="( stat_end('Akku Cell Temp Max' [C], 'True', 'Laps') - stat_start('Akku Cell Temp Max' [C], 'True', 'Laps') ) / ( stat_end('Corr Dist' [km], 'True', 'Laps') - stat_start('Corr Dist' [km], 'True', 'Laps') )" SampleRate="0" Unit=""/>
+  <MathExpression Id="Average Power Limit" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="stat_mean(min('Endruance Max Power' [kW], 'Akku Discharge Power Limit' [kW]), 'True', 'Laps')" SampleRate="0" Unit="kW"/>
+  <MathExpression Id="Energy Discharged / km" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="( stat_end('Energy Discharged' [kW.h], 'True', 'Laps') - stat_start('Energy Discharged' [kW.h], 'True', 'Laps') ) / ( stat_end('Corr Dist' [km], 'True', 'Laps') - stat_start('Corr Dist' [km], 'True', 'Laps') )" SampleRate="0" Unit=""/>
+  <MathExpression Id="Regen" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="'Akku Power' [kW] &lt; 0" SampleRate="0" Unit=""/>
+  <MathExpression Id="Regen Energy" DisplayUnit="kW.h" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="integrate('Akku Power' [kW] * - 1, 'Akku Power' [kW] &lt; 0)" SampleRate="0" Unit="kJ"/>
+  <MathExpression Id="Energy Used in Last km" DisplayUnit="W.h" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="stat_mean('Energy Used' [W.h], 'Corr Dist' [m] &gt; 'Corr Dist' [m] - 1000)" SampleRate="0" Unit="W.h"/>
  </MathItems>
 </Maths>
