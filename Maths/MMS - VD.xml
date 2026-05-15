@@ -14,10 +14,10 @@
   <MathExpression Id="Cos Theta" DisplayUnit="ratio" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="'G Force Long' [G] / 'G Force Total' [G]" SampleRate="0" Unit="ratio"/>
   <MathExpression Id="Roll" DisplayUnit="deg" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="('Susp Disp FL' [mm] - 'Susp Disp FR' [mm] + 'Susp Disp RL' [mm] - 'Susp Disp RR' [mm]) / (2 * 'Track Width'[m])" SampleRate="0" Unit="rad"/>
   <MathExpression Id="Pitch" DisplayUnit="deg" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="( 'Susp Disp RL' [mm] - 'Susp Disp FL' [mm] + 'Susp Disp RR' [mm] - 'Susp Disp FR' [mm] ) / ( 2 * 'Wheel Base' [m] )" SampleRate="0" Unit="rad"/>
-  <MathExpression Id="Damper Velocity FL" DisplayUnit="mm/s" DisplayDPS="2" DisplayColorIndex="5" Interpolate="1" Script="derivative('Susp Disp FL' [m])" SampleRate="0" Unit="m/s"/>
-  <MathExpression Id="Damper Velocity FR" DisplayUnit="mm/s" DisplayDPS="2" DisplayColorIndex="6" Interpolate="1" Script="derivative('Susp Disp FR' [m])" SampleRate="0" Unit="m/s"/>
-  <MathExpression Id="Damper Velocity RL" DisplayUnit="mm/s" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" Script="derivative('Susp Disp RL' [m])" SampleRate="0" Unit="mm/s"/>
-  <MathExpression Id="Damper Velocity RR" DisplayUnit="mm/s" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="derivative('Susp Disp RR' [m])" SampleRate="0" Unit="m/s"/>
+  <MathExpression Id="Damper Velocity FL" DisplayUnit="mm/s" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="derivative('Susp Disp FL' [m])" SampleRate="0" Unit="m/s"/>
+  <MathExpression Id="Damper Velocity FR" DisplayUnit="mm/s" DisplayDPS="2" DisplayColorIndex="4" Interpolate="1" Script="derivative('Susp Disp FR' [m])" SampleRate="0" Unit="m/s"/>
+  <MathExpression Id="Damper Velocity RL" DisplayUnit="mm/s" DisplayDPS="2" DisplayColorIndex="6" Interpolate="1" Script="derivative('Susp Disp RL' [m])" SampleRate="0" Unit="mm/s"/>
+  <MathExpression Id="Damper Velocity RR" DisplayUnit="mm/s" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="derivative('Susp Disp RR' [m])" SampleRate="0" Unit="m/s"/>
   <MathTable2D Id=" Motion Ratio FL" DisplayUnit="" DisplayDPS="4" DisplayColorIndex="2" Interpolate="1" Interpolation="1" Extrapolation="1" Rate="50">
    <XDim Count="13" Id="Susp Disp FL" Units="mm" Data="26.3940 25.0000 20.0000 15.0000 10.0000 5.0000 0.0000 -5.0000 -10.0000 -15.0000 -20.0000 -25.0000 -27.8360"/>
    <Values Units="" Data="1.1221 1.1169 1.0990 1.0822 1.0669 1.0533 1.0436 1.0334 1.0253 1.0197 1.0169 1.0174 1.0193"/>
