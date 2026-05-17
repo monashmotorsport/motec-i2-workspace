@@ -63,6 +63,7 @@
                     <xs:attribute name="DisplayColorIndex" type="xs:integer" use="optional"/>
                     <xs:attribute name="Interpolate" type="xs:boolean" use="optional"/>
                     <xs:attribute name="Interpolation" type="xs:integer" use="optional"/>
+                    <xs:attribute name="Extrapolation" type="xs:boolean" use="optional"/>
                     <xs:attribute name="Rate" type="xs:nonNegativeInteger" use="optional"/>
                   </xs:complexType>
                 </xs:element>
