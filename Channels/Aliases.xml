@@ -502,25 +502,25 @@
  <Alias Id="Target Speed FL">
   <ChannelRefs>
    <ChannelRef Id="Controller FL targetVelocity"/>
-   <ChannelRef Id="Controls FL targetVelocity"/>
+   <ChannelRef Id="Controls PowertrainMux FL speedRequest"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Target Speed FR">
   <ChannelRefs>
    <ChannelRef Id="Controller FR targetVelocity"/>
-   <ChannelRef Id="Controls FR targetVelocity"/>
+   <ChannelRef Id="Controls PowertrainMux FR speedRequest"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Target Speed RL">
   <ChannelRefs>
    <ChannelRef Id="Controller RL targetVelocity"/>
-   <ChannelRef Id="Controls RL targetVelocity"/>
+   <ChannelRef Id="Controls PowertrainMux RL speedRequest"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Target Speed RR">
   <ChannelRefs>
    <ChannelRef Id="Controller RR targetVelocity"/>
-   <ChannelRef Id="Controls RR targetVelocity"/>
+   <ChannelRef Id="Controls PowertrainMux RR speedRequest"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Throttle Pos">
@@ -532,25 +532,25 @@
  <Alias Id="Torque Req FL">
   <ChannelRefs>
    <ChannelRef Id="Controller FL torqueRequest"/>
-   <ChannelRef Id="Controls FL torqueRequest"/>
+   <ChannelRef Id="Controls PowertrainMux FL torqueRequest"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Torque Req FR">
   <ChannelRefs>
    <ChannelRef Id="Controller FR torqueRequest"/>
-   <ChannelRef Id="Controls FR torqueRequest"/>
+   <ChannelRef Id="Controls PowertrainMux FR torqueRequest"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Torque Req RL">
   <ChannelRefs>
    <ChannelRef Id="Controller RL torqueRequest"/>
-   <ChannelRef Id="Controls RL torqueRequest"/>
+   <ChannelRef Id="Controls PowertrainMux RL torqueRequest"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Torque Req RR">
   <ChannelRefs>
    <ChannelRef Id="Controller RR torqueRequest"/>
-   <ChannelRef Id="Controls RR torqueRequest"/>
+   <ChannelRef Id="Controls PowertrainMux RR torqueRequest"/>
   </ChannelRefs>
  </Alias>
  <Alias Id="Voltage D Axis FL">
